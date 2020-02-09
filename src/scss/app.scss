@@ -28,8 +28,8 @@ $theme-colors: map-remove(
 body {
   overflow-x: hidden;
 }
-.content {
-  max-width: 850px;
+.lists {
+  max-width: 750px;
 }
 .image-content {
   background-color: black;
@@ -37,8 +37,7 @@ body {
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
-  max-height: 100vh;
-  min-width: 25vw;
+  min-width: 350px;
 }
 header {
   height: 176px;
@@ -62,9 +61,10 @@ header {
   &.loaded {
     &:before {
       opacity: 0;
-      transition: cubic-bezier(0.4, 0.37, 0, 1) 0.25s 0.5s;
+      transition: cubic-bezier(0.4, 0.37, 0, 1) 0.5s 0.25s;
     }
     svg {
+      margin-left: -42px;
       transition: cubic-bezier(0.4, 0.37, 0, 1) 0.75s;
       height: 100%;
       max-width: 355px;

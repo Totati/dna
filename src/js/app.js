@@ -34,29 +34,26 @@ function enableScroll() {
   window.ontouchmove = null;
   document.onkeydown = null;
 }
-
+var easing = 'cubicBezier(0.3, 0, 0, 1)';
 disableScroll();
 anime({
   targets: "#textDigital",
-  translateX: ["38%", 0],
+  translateX: ["35.4px", 0],
   delay: 500,
-  duration: 750,
-  easing: "cubicBezier(0.4, 0.37, 0, 1)"
+  easing: easing,
 });
 anime({
   targets: "#textNetwork",
-  translateX: ["-50%", 0],
-  delay: 1250,
-  duration: 750,
-  easing: "cubicBezier(0.4, 0.37, 0, 1)"
+  translateX: ["-46.5px", 0],
+  delay: 1500,
+  easing: easing,
 }).finished.then(function() {
   document.getElementById("header").classList.add("loaded");
   enableScroll();
 });
 anime({
   targets: "#textAgency",
-  translateX: ["-42%", 0],
+  translateX: ["-39px", 0],
   delay: 500,
-  duration: 750,
-  easing: "cubicBezier(0.4, 0.37, 0, 1)"
+  easing: easing
 });
